@@ -1,0 +1,28 @@
+body {
+    background: #1F2525;
+}
+h1 {
+    font-size: 15vmin;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+    animation: hue 15s ease-in-out infinite;
+}
+span {
+    opacity: 0;
+    display: inline-block;
+    transition: 1s ease-in-out;
+    transform: translateY(4vmin);
+}
+span.decoration {
+    color: #ee14ee;
+    opacity: 1;
+    transform: translateY(-4vmin);
+    transition: 1s ease-in-out;
+}
+
+@keyframes hue {
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
